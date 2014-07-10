@@ -41,3 +41,13 @@ extension PhotosCollectionViewController: UICollectionViewDataSource {
     }
 
 }
+
+// MARK: - PhotoViewerContained
+
+extension PhotosCollectionViewController: PhotoViewerContained {
+
+    var contentScrollView: UIScrollView! {
+        return self.collectionView
+    }
+
+}
