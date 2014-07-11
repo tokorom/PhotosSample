@@ -24,3 +24,6 @@ temp/
 # User-specific project settings
 *.mode1v3
 *.mode2v3
+
+# CocoaPods
+/Pods
