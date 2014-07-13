@@ -1,6 +1,6 @@
 PODS:
   - KVOController (1.0.1)
-  - TKRSegueOptions (0.0.1)
+  - TKRSegueOptions (0.1.0)
 
 DEPENDENCIES:
   - KVOController
@@ -12,6 +12,6 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   KVOController: e6ad4a058ab0ceed546802361adb89d322a22cf2
-  TKRSegueOptions: bd3df3e50d7c5f50f230f2bb0acc1013446b6620
+  TKRSegueOptions: 4bb4882c3e8cc668ba4a4fb2a3923841c871e616
 
 COCOAPODS: 0.33.1
