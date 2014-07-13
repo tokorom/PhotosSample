@@ -9,6 +9,7 @@ import Photos
 
 class PhotosCollectionViewController: UICollectionViewController {
 
+    var collection: PHAssetCollection!
     var assets: PHFetchResult!
     var _overlayScrollView: UIScrollView!
 
@@ -17,9 +18,9 @@ class PhotosCollectionViewController: UICollectionViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-/*         if let options = self.segueOptions?.value as? Dictionary {
-            self.assets = options["collection"]
-        } */
+        if let collection = self.segueOptions?["collection"] as? PHAssetCollection {
+            self.collection = collection
+        }
     }
 
     override func viewWillAppear(animated: Bool) {
@@ -29,8 +30,12 @@ class PhotosCollectionViewController: UICollectionViewController {
     }
 
     func loadContents() {
-        if !self.assets {
-            self.assets = PHAsset.fetchAssetsWithMediaType(PHAssetMediaType.Image, options: nil)
+        let fetchOptions = PHFetchOptions()
+        fetchOptions.sortDescriptors = [NSSortDescriptor(key: "creationDate", ascending: true)]
+        if let collection = self.collection {
+            self.assets = PHAsset.fetchAssetsInAssetCollection(collection, options: fetchOptions)
+        } else {
+            self.assets = PHAsset.fetchAssetsWithMediaType(PHAssetMediaType.Image, options: fetchOptions)
         }
         self.collectionView.reloadData()
     }
@@ -42,13 +47,15 @@ class PhotosCollectionViewController: UICollectionViewController {
 extension PhotosCollectionViewController: UICollectionViewDataSource {
 
     override func collectionView(collectionView: UICollectionView!, numberOfItemsInSection section: Int) -> Int {
-        return self.assets.count
+        if let assets = self.assets {
+            return assets.count
+        }
+        return 0
     }
 
     override func collectionView(collectionView: UICollectionView!, cellForItemAtIndexPath indexPath: NSIndexPath!) -> UICollectionViewCell! {
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier("PhotoCell", forIndexPath: indexPath) as UICollectionViewCell
-        if let asset = self.assets.optionalValueAtIndex(indexPath.row) as? PHAsset {
-/*         if let asset = self.assets[indexPath.row] as? PHAsset { */
+        if let asset = self.assets?.optionalValueAtIndex(indexPath.row) as? PHAsset {
             cell.updateWithModel(asset)
         }
         return cell

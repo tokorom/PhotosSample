@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>E962B4B7-C4B0-4F98-A7EB-68D541402289</string>
+	<key>IDESourceControlProjectName</key>
+	<string>PhotosSample</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>10BDFC0F-3DB2-4B3B-B4A0-BCD5EAC25294</key>
+		<string>ssh://github.com/tokorom/PhotosSample.git</string>
+		<key>E60F3A10-6278-4715-AA39-16DE1BAB16CB</key>
+		<string>ssh://github.com/tokorom/TKRSegueOptions.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>PhotosSample.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>10BDFC0F-3DB2-4B3B-B4A0-BCD5EAC25294</key>
+		<string>..</string>
+		<key>E60F3A10-6278-4715-AA39-16DE1BAB16CB</key>
+		<string>../../../github/TKRSegueOptions</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/tokorom/PhotosSample.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>10BDFC0F-3DB2-4B3B-B4A0-BCD5EAC25294</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>10BDFC0F-3DB2-4B3B-B4A0-BCD5EAC25294</string>
+			<key>IDESourceControlWCCName</key>
+			<string>PhotosSample</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>E60F3A10-6278-4715-AA39-16DE1BAB16CB</string>
+			<key>IDESourceControlWCCName</key>
+			<string>TKRSegueOptions</string>
+		</dict>
+	</array>
+</dict>
+</plist>
