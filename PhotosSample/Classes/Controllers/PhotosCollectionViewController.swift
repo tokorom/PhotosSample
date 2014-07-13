@@ -31,11 +31,11 @@ class PhotosCollectionViewController: UICollectionViewController {
 
     func loadContents() {
         let fetchOptions = PHFetchOptions()
-        fetchOptions.sortDescriptors = [NSSortDescriptor(key: "creationDate", ascending: true)]
+        fetchOptions.sortDescriptors = [NSSortDescriptor(key: "creationDate", ascending: false)]
         if let collection = self.collection {
             self.assets = PHAsset.fetchAssetsInAssetCollection(collection, options: fetchOptions)
         } else {
-            self.assets = PHAsset.fetchAssetsWithMediaType(PHAssetMediaType.Image, options: fetchOptions)
+            self.assets = PHAsset.fetchAssetsWithOptions(fetchOptions)
         }
         self.collectionView.reloadData()
     }
