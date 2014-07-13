@@ -9,5 +9,6 @@ import UIKit
 @objc protocol PhotoViewerContained {
 
     var contentScrollView: UIScrollView! { get }
+    var overlayScrollView: UIScrollView! { get set }
     
 }

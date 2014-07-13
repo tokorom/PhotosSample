@@ -17,6 +17,12 @@
 		0604244F196E84F5005D6B9A /* PhotoViewerMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0604244E196E84F5005D6B9A /* PhotoViewerMainViewController.swift */; };
 		06042451196E8D84005D6B9A /* PhotoViewerContained.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06042450196E8D84005D6B9A /* PhotoViewerContained.swift */; };
 		061A88A8196F7D790045CA94 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061A88A7196F7D790045CA94 /* BaseViewController.swift */; };
+		069983291972251A000624C9 /* UITableViewCell+Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069983281972251A000624C9 /* UITableViewCell+Model.swift */; };
+		0699832B19722661000624C9 /* AlbumCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0699832A19722661000624C9 /* AlbumCell.swift */; };
+		06AB4CC019724A5F00C9A2C8 /* Array+Safe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06AB4CBF19724A5F00C9A2C8 /* Array+Safe.swift */; };
+		06AB4CC219725B9A00C9A2C8 /* NSObject+SafeSubscripts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06AB4CC119725B9A00C9A2C8 /* NSObject+SafeSubscripts.swift */; };
+		06AB4CC41972613800C9A2C8 /* OverlayScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06AB4CC31972613800C9A2C8 /* OverlayScrollView.swift */; };
+		06C8F8EF196FD5E20034B447 /* AlbumListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06C8F8EE196FD5E20034B447 /* AlbumListViewController.swift */; };
 		06D7BFFC196CE5B100898A97 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D7BFFB196CE5B100898A97 /* AppDelegate.swift */; };
 		06D7BFFE196CE5B100898A97 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D7BFFD196CE5B100898A97 /* ViewController.swift */; };
 		06D7C001196CE5B100898A97 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06D7BFFF196CE5B100898A97 /* Main.storyboard */; };
@@ -52,6 +58,12 @@
 		06042450196E8D84005D6B9A /* PhotoViewerContained.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoViewerContained.swift; sourceTree = "<group>"; };
 		061A889F196F5AAA0045CA94 /* PhotosSample-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PhotosSample-Bridging-Header.h"; sourceTree = "<group>"; };
 		061A88A7196F7D790045CA94 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		069983281972251A000624C9 /* UITableViewCell+Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Model.swift"; sourceTree = "<group>"; };
+		0699832A19722661000624C9 /* AlbumCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumCell.swift; sourceTree = "<group>"; };
+		06AB4CBF19724A5F00C9A2C8 /* Array+Safe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Safe.swift"; sourceTree = "<group>"; };
+		06AB4CC119725B9A00C9A2C8 /* NSObject+SafeSubscripts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+SafeSubscripts.swift"; sourceTree = "<group>"; };
+		06AB4CC31972613800C9A2C8 /* OverlayScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverlayScrollView.swift; sourceTree = "<group>"; };
+		06C8F8EE196FD5E20034B447 /* AlbumListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumListViewController.swift; sourceTree = "<group>"; };
 		06D7BFF6196CE5B100898A97 /* PhotosSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotosSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		06D7BFFA196CE5B100898A97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		06D7BFFB196CE5B100898A97 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -99,6 +111,7 @@
 		0604243D196E7D2D005D6B9A /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				06C8F8EE196FD5E20034B447 /* AlbumListViewController.swift */,
 				061A88A7196F7D790045CA94 /* BaseViewController.swift */,
 				06042450196E8D84005D6B9A /* PhotoViewerContained.swift */,
 				0604244E196E84F5005D6B9A /* PhotoViewerMainViewController.swift */,
@@ -110,6 +123,9 @@
 		0604243F196E7D2D005D6B9A /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				06AB4CC119725B9A00C9A2C8 /* NSObject+SafeSubscripts.swift */,
+				06AB4CBF19724A5F00C9A2C8 /* Array+Safe.swift */,
+				069983281972251A000624C9 /* UITableViewCell+Model.swift */,
 				06042440196E7D2D005D6B9A /* UICollectionViewCell+Model.swift */,
 			);
 			path = Extensions;
@@ -135,6 +151,8 @@
 		06042446196E7D2D005D6B9A /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				06AB4CC31972613800C9A2C8 /* OverlayScrollView.swift */,
+				0699832A19722661000624C9 /* AlbumCell.swift */,
 				06042447196E7D2D005D6B9A /* PhotoCell.swift */,
 			);
 			path = Views;
@@ -343,13 +361,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				0604244A196E7D2D005D6B9A /* LocalPhotosManager.swift in Sources */,
+				06AB4CC41972613800C9A2C8 /* OverlayScrollView.swift in Sources */,
 				06042449196E7D2D005D6B9A /* UICollectionViewCell+Model.swift in Sources */,
 				061A88A8196F7D790045CA94 /* BaseViewController.swift in Sources */,
+				0699832B19722661000624C9 /* AlbumCell.swift in Sources */,
 				06042448196E7D2D005D6B9A /* PhotosCollectionViewController.swift in Sources */,
+				069983291972251A000624C9 /* UITableViewCell+Model.swift in Sources */,
+				06AB4CC019724A5F00C9A2C8 /* Array+Safe.swift in Sources */,
+				06C8F8EF196FD5E20034B447 /* AlbumListViewController.swift in Sources */,
 				0604244F196E84F5005D6B9A /* PhotoViewerMainViewController.swift in Sources */,
 				0604244B196E7D2D005D6B9A /* Model.swift in Sources */,
 				0604244D196E7D2D005D6B9A /* PhotoCell.swift in Sources */,
 				06D7BFFE196CE5B100898A97 /* ViewController.swift in Sources */,
+				06AB4CC219725B9A00C9A2C8 /* NSObject+SafeSubscripts.swift in Sources */,
 				06D7BFFC196CE5B100898A97 /* AppDelegate.swift in Sources */,
 				06042451196E8D84005D6B9A /* PhotoViewerContained.swift in Sources */,
 				0604244C196E7D2D005D6B9A /* PhotosManager.swift in Sources */,
@@ -480,6 +504,7 @@
 				INFOPLIST_FILE = PhotosSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "PhotosSample/PhotosSample-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -495,6 +520,7 @@
 				INFOPLIST_FILE = PhotosSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "PhotosSample/PhotosSample-Bridging-Header.h";
 			};
 			name = Release;

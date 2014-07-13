@@ -24,4 +24,5 @@ class PhotoCell: UICollectionViewCell {
             }
         }
     }
+
 }
