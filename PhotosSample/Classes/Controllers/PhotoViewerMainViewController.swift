@@ -66,6 +66,8 @@ extension PhotoViewerMainViewController {
     }
 
     func replaceContainedViewControllerAtIndex(index: Int) {
+        println("###### \(self.containedViewController?.view)");
+        self.containedViewController?.view?.removeFromSuperview()
         self.containedViewController?.willMoveToParentViewController(self)
         self.containedViewController?.removeFromParentViewController()
 
