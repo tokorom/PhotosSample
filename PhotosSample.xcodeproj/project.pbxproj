@@ -19,10 +19,11 @@
 		061A88A8196F7D790045CA94 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061A88A7196F7D790045CA94 /* BaseViewController.swift */; };
 		069983291972251A000624C9 /* UITableViewCell+Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069983281972251A000624C9 /* UITableViewCell+Model.swift */; };
 		0699832B19722661000624C9 /* AlbumCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0699832A19722661000624C9 /* AlbumCell.swift */; };
-		06AB4CC019724A5F00C9A2C8 /* Array+Safe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06AB4CBF19724A5F00C9A2C8 /* Array+Safe.swift */; };
 		06AB4CC219725B9A00C9A2C8 /* NSObject+SafeSubscripts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06AB4CC119725B9A00C9A2C8 /* NSObject+SafeSubscripts.swift */; };
 		06AB4CC41972613800C9A2C8 /* OverlayScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06AB4CC31972613800C9A2C8 /* OverlayScrollView.swift */; };
 		06C8F8EF196FD5E20034B447 /* AlbumListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06C8F8EE196FD5E20034B447 /* AlbumListViewController.swift */; };
+		06C9F1311972F46B008F86BD /* GeneralCollectionSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06C9F1301972F46B008F86BD /* GeneralCollectionSectionView.swift */; };
+		06C9F1331972FBBD008F86BD /* Array+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06C9F1321972FBBD008F86BD /* Array+Utils.swift */; };
 		06D7BFFC196CE5B100898A97 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D7BFFB196CE5B100898A97 /* AppDelegate.swift */; };
 		06D7BFFE196CE5B100898A97 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D7BFFD196CE5B100898A97 /* ViewController.swift */; };
 		06D7C001196CE5B100898A97 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06D7BFFF196CE5B100898A97 /* Main.storyboard */; };
@@ -60,10 +61,11 @@
 		061A88A7196F7D790045CA94 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		069983281972251A000624C9 /* UITableViewCell+Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Model.swift"; sourceTree = "<group>"; };
 		0699832A19722661000624C9 /* AlbumCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumCell.swift; sourceTree = "<group>"; };
-		06AB4CBF19724A5F00C9A2C8 /* Array+Safe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Safe.swift"; sourceTree = "<group>"; };
 		06AB4CC119725B9A00C9A2C8 /* NSObject+SafeSubscripts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+SafeSubscripts.swift"; sourceTree = "<group>"; };
 		06AB4CC31972613800C9A2C8 /* OverlayScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverlayScrollView.swift; sourceTree = "<group>"; };
 		06C8F8EE196FD5E20034B447 /* AlbumListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumListViewController.swift; sourceTree = "<group>"; };
+		06C9F1301972F46B008F86BD /* GeneralCollectionSectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneralCollectionSectionView.swift; sourceTree = "<group>"; };
+		06C9F1321972FBBD008F86BD /* Array+Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Utils.swift"; sourceTree = "<group>"; };
 		06D7BFF6196CE5B100898A97 /* PhotosSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotosSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		06D7BFFA196CE5B100898A97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		06D7BFFB196CE5B100898A97 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -123,8 +125,8 @@
 		0604243F196E7D2D005D6B9A /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				06C9F1321972FBBD008F86BD /* Array+Utils.swift */,
 				06AB4CC119725B9A00C9A2C8 /* NSObject+SafeSubscripts.swift */,
-				06AB4CBF19724A5F00C9A2C8 /* Array+Safe.swift */,
 				069983281972251A000624C9 /* UITableViewCell+Model.swift */,
 				06042440196E7D2D005D6B9A /* UICollectionViewCell+Model.swift */,
 			);
@@ -151,6 +153,7 @@
 		06042446196E7D2D005D6B9A /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				06C9F1301972F46B008F86BD /* GeneralCollectionSectionView.swift */,
 				06AB4CC31972613800C9A2C8 /* OverlayScrollView.swift */,
 				0699832A19722661000624C9 /* AlbumCell.swift */,
 				06042447196E7D2D005D6B9A /* PhotoCell.swift */,
@@ -367,15 +370,16 @@
 				0699832B19722661000624C9 /* AlbumCell.swift in Sources */,
 				06042448196E7D2D005D6B9A /* PhotosCollectionViewController.swift in Sources */,
 				069983291972251A000624C9 /* UITableViewCell+Model.swift in Sources */,
-				06AB4CC019724A5F00C9A2C8 /* Array+Safe.swift in Sources */,
 				06C8F8EF196FD5E20034B447 /* AlbumListViewController.swift in Sources */,
 				0604244F196E84F5005D6B9A /* PhotoViewerMainViewController.swift in Sources */,
 				0604244B196E7D2D005D6B9A /* Model.swift in Sources */,
 				0604244D196E7D2D005D6B9A /* PhotoCell.swift in Sources */,
 				06D7BFFE196CE5B100898A97 /* ViewController.swift in Sources */,
+				06C9F1311972F46B008F86BD /* GeneralCollectionSectionView.swift in Sources */,
 				06AB4CC219725B9A00C9A2C8 /* NSObject+SafeSubscripts.swift in Sources */,
 				06D7BFFC196CE5B100898A97 /* AppDelegate.swift in Sources */,
 				06042451196E8D84005D6B9A /* PhotoViewerContained.swift in Sources */,
+				06C9F1331972FBBD008F86BD /* Array+Utils.swift in Sources */,
 				0604244C196E7D2D005D6B9A /* PhotosManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

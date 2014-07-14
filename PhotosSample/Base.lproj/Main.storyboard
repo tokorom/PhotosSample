@@ -15,7 +15,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="1" minimumInteritemSpacing="1" id="t4x-cB-Ivq">
                             <size key="itemSize" width="106" height="106"/>
-                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="headerReferenceSize" width="50" height="50"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
@@ -44,6 +44,24 @@
                                 </connections>
                             </collectionViewCell>
                         </cells>
+                        <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PhotosCollectionSectionView" id="bBl-Yf-tEL" customClass="GeneralCollectionSectionView" customModule="PhotosSample" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="480" height="50"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bMd-mh-FBF">
+                                    <rect key="frame" x="20" y="0.0" width="440" height="50"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="bMd-mh-FBF" secondAttribute="trailing" constant="20" id="Z9v-we-Tca"/>
+                                <constraint firstItem="bMd-mh-FBF" firstAttribute="top" secondItem="bBl-Yf-tEL" secondAttribute="top" id="dV9-vf-9EM"/>
+                                <constraint firstItem="bMd-mh-FBF" firstAttribute="leading" secondItem="bBl-Yf-tEL" secondAttribute="leading" constant="20" id="lHg-pC-aLc"/>
+                                <constraint firstAttribute="bottom" secondItem="bMd-mh-FBF" secondAttribute="bottom" id="r07-z2-Pk3"/>
+                            </constraints>
+                        </collectionReusableView>
                         <connections>
                             <outlet property="dataSource" destination="klv-Eg-FFz" id="QqW-pj-xfW"/>
                             <outlet property="delegate" destination="klv-Eg-FFz" id="whS-1g-mCq"/>
