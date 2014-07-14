@@ -128,6 +128,18 @@ extension PhotosCollectionViewController: UICollectionViewDataSource {
         return cell
     }
 
+    override func collectionView(collectionView: UICollectionView!, viewForSupplementaryElementOfKind kind: String!, atIndexPath indexPath: NSIndexPath!) -> UICollectionReusableView! {
+        if (kind == UICollectionElementKindSectionHeader) {
+            let headerView = collectionView.dequeueReusableSupplementaryViewOfKind(kind, withReuseIdentifier: "PhotosCollectionSectionView", forIndexPath: indexPath) as GeneralCollectionSectionView
+
+            if let title = self.sectionTitles.optionalValueAtIndex(indexPath.section) {
+                headerView.mainLabel.text = title
+            }
+
+            return headerView
+        }
+        return nil
+    }
 }
 
 // MARK: - PhotoViewerContained

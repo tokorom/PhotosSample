@@ -1,12 +1,12 @@
 //
-//  UICollectionViewCell+Model.swift
+//  UICollectionReusableView+Model.swift
 //
 //  Created by ToKoRo on 2014-07-09.
 //
 
 import UIKit
 
-extension UICollectionViewCell {
+extension UICollectionReusableView {
 
     func updateWithModel(model: AnyObject) {
     }

@@ -51,7 +51,7 @@
                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bMd-mh-FBF">
                                     <rect key="frame" x="20" y="0.0" width="440" height="50"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                             </subviews>
@@ -61,6 +61,9 @@
                                 <constraint firstItem="bMd-mh-FBF" firstAttribute="leading" secondItem="bBl-Yf-tEL" secondAttribute="leading" constant="20" id="lHg-pC-aLc"/>
                                 <constraint firstAttribute="bottom" secondItem="bMd-mh-FBF" secondAttribute="bottom" id="r07-z2-Pk3"/>
                             </constraints>
+                            <connections>
+                                <outlet property="mainLabel" destination="bMd-mh-FBF" id="oMA-k6-JTn"/>
+                            </connections>
                         </collectionReusableView>
                         <connections>
                             <outlet property="dataSource" destination="klv-Eg-FFz" id="QqW-pj-xfW"/>

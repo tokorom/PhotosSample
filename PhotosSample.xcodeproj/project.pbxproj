@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		04BF8AC00F9F48008DD2184C /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 91CB8091B88C471C8CA81B30 /* libPods.a */; };
 		06042448196E7D2D005D6B9A /* PhotosCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0604243E196E7D2D005D6B9A /* PhotosCollectionViewController.swift */; };
-		06042449196E7D2D005D6B9A /* UICollectionViewCell+Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06042440196E7D2D005D6B9A /* UICollectionViewCell+Model.swift */; };
+		06042449196E7D2D005D6B9A /* UICollectionReusableView+Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06042440196E7D2D005D6B9A /* UICollectionReusableView+Model.swift */; };
 		0604244A196E7D2D005D6B9A /* LocalPhotosManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06042442196E7D2D005D6B9A /* LocalPhotosManager.swift */; };
 		0604244B196E7D2D005D6B9A /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06042443196E7D2D005D6B9A /* Model.swift */; };
 		0604244C196E7D2D005D6B9A /* PhotosManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06042444196E7D2D005D6B9A /* PhotosManager.swift */; };
@@ -50,7 +50,7 @@
 
 /* Begin PBXFileReference section */
 		0604243E196E7D2D005D6B9A /* PhotosCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotosCollectionViewController.swift; sourceTree = "<group>"; };
-		06042440196E7D2D005D6B9A /* UICollectionViewCell+Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionViewCell+Model.swift"; sourceTree = "<group>"; };
+		06042440196E7D2D005D6B9A /* UICollectionReusableView+Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionReusableView+Model.swift"; sourceTree = "<group>"; };
 		06042442196E7D2D005D6B9A /* LocalPhotosManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalPhotosManager.swift; sourceTree = "<group>"; };
 		06042443196E7D2D005D6B9A /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		06042444196E7D2D005D6B9A /* PhotosManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotosManager.swift; sourceTree = "<group>"; };
@@ -128,7 +128,7 @@
 				06C9F1321972FBBD008F86BD /* Array+Utils.swift */,
 				06AB4CC119725B9A00C9A2C8 /* NSObject+SafeSubscripts.swift */,
 				069983281972251A000624C9 /* UITableViewCell+Model.swift */,
-				06042440196E7D2D005D6B9A /* UICollectionViewCell+Model.swift */,
+				06042440196E7D2D005D6B9A /* UICollectionReusableView+Model.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -365,7 +365,7 @@
 			files = (
 				0604244A196E7D2D005D6B9A /* LocalPhotosManager.swift in Sources */,
 				06AB4CC41972613800C9A2C8 /* OverlayScrollView.swift in Sources */,
-				06042449196E7D2D005D6B9A /* UICollectionViewCell+Model.swift in Sources */,
+				06042449196E7D2D005D6B9A /* UICollectionReusableView+Model.swift in Sources */,
 				061A88A8196F7D790045CA94 /* BaseViewController.swift in Sources */,
 				0699832B19722661000624C9 /* AlbumCell.swift in Sources */,
 				06042448196E7D2D005D6B9A /* PhotosCollectionViewController.swift in Sources */,
